@@ -33,18 +33,18 @@ async function buscarSeries() {
       card.querySelector(".menu").textContent = serie.menu;
       card.querySelector(".title").textContent = serie.title;
       card.querySelector(".genero").textContent = serie.genero;
-      card.querySelector(".temporadas").textContent = serie.temporadas;
-      card.querySelector(".lancamento").textContent = serie.lancamento;
-      card.querySelector(".plataformas").textContent = serie.plataformas;
+      card.querySelector(".numero_temporadas").textContent = serie.numero_temporadas;
+      card.querySelector(".ano_lancamento").textContent = serie.ano_lancamento;
+      card.querySelector(".plataforma").textContent = serie.plataforma;
 
       const imagem = card.querySelector("img");
 
       if(serie.imageUrl){
         imagem.src = serie.imageUrl;
         imagem.alt =  serie.title;
-        imagem.alt =  serie.temporadas;
-        imagem.alt =  serie.lancamento;
-        imagem.alt =  serie.plataformas;
+        imagem.alt =  serie.numero_temporadas;
+        imagem.alt =  serie.ano_lancamento;
+        imagem.alt =  serie.plataforma;
       } else {
         imagem.remove();
       }
